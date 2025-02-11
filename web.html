@@ -4,23 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CinemaCove</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        main {
+            width: 50%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+        img {
+            margin-bottom: 10px;
+            max-width: 100%;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h2><i>CinemaCove</i></h2>
-        <br>
-    </header>
     <main>
+        <header>
+            <h2><i>CinemaCove</i></h2>
+        </header>
+        <img src="https://png.pngtree.com/element_our/png/20181227/movie-icon-which-is-designed-for-all-application-purpose-new-png_287896.jpg" alt="Logo" height="100">
         <div id="search-container">
             <form>
-                <label for="search-input">Search Movies:</label><br>
+                <label for="search-input">Search For Movies:</label><br><br>
                 <input type="text" id="search-input" placeholder="Type Here"><br><br>
-                <button type="submit">Search</button>
+                <button type="submit">Search</button><br><br>
             </form>
         </div>
+        <footer>
+            <p>Thank you.</p>
+        </footer>
     </main>
-    <footer>
-        <p>Thank you</p>
-    </footer>
 </body>
 </html>
